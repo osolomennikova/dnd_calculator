@@ -1,13 +1,17 @@
 import React from 'react';
-import './App.scss';
 import Screen from "./components/sidebar/Screen";
-
+import Signs from "./components/sidebar/Signs";
+import './App.scss';
 
 
 function App() {
     return (
-        <div className="App">
-            <Screen/>
+        <div className="container">
+            <div className="sidebar">
+                <Screen/>
+                <Signs/>
+            </div>
+            <div className="canvas"></div>
         </div>
     );
 }
