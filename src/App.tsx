@@ -1,6 +1,7 @@
 import React from 'react';
 import Screen from "./components/sidebar/Screen";
 import Signs from "./components/sidebar/Signs";
+import Equals from "./components/sidebar/Equals";
 import './App.scss';
 import Canvas from "./components/canvas/Canvas";
 
@@ -11,6 +12,7 @@ function App() {
             <div className="sidebar">
                 <Screen/>
                 <Signs/>
+                <Equals/>
             </div>
             <div className="canvas">
                 <Canvas/>

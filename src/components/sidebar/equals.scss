@@ -1,0 +1,19 @@
+.equals_container {
+  width: 240px;
+  height: 72px;
+  padding: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.equals_bg {
+  background: #5D5FEF;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
