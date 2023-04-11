@@ -21,4 +21,7 @@ $base-font: Inter;
   font-size: 14px;
   font-weight: normal;
   font-family: $base-font;
+  &:hover{
+    cursor: pointer;
+  }
 }

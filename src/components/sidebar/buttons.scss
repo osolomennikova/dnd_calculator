@@ -7,6 +7,15 @@ $base-font: Inter;
   font-size: 14px;
   font-weight: normal;
   font-family: $base-font;
+  &:hover{
+    border: 2px solid #5D5FEF;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  &:active{
+    background: #5D5FEF;
+    color: white;
+  }
 }
 
 .buttons_container {
