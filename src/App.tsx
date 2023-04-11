@@ -4,6 +4,7 @@ import Signs from "./components/sidebar/Signs";
 import Equals from "./components/sidebar/Equals";
 import './App.scss';
 import Canvas from "./components/canvas/Canvas";
+import Buttons from "./components/sidebar/Buttons";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
             <div className="sidebar">
                 <Screen/>
                 <Signs/>
+                <Buttons/>
                 <Equals/>
             </div>
             <div className="canvas">

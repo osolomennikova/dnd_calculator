@@ -1,0 +1,34 @@
+$base-font: Inter;
+%name-digits {
+  height: 48px;
+  border: 1px solid #E2E3E5;
+  border-radius: 6px;
+  background: #FFFFFF;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: $base-font;
+}
+
+.buttons_container {
+  width: 240px;
+  height: 224px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 12px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.digits {
+  width: 72px;
+  @extend %name-digits;
+}
+
+.big_digit {
+  width: 152px;
+  grid-column: 1 / 3;
+  @extend %name-digits;
+}
