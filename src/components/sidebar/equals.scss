@@ -1,4 +1,5 @@
 $base-font: Inter;
+$base-color: #5D5FEF;
 
 .equals_container {
   width: 240px;
@@ -10,7 +11,7 @@ $base-font: Inter;
 }
 
 .equals_bg {
-  background: #5D5FEF;
+  background: $base-color;
   border-radius: 6px;
   width: 100%;
   height: 100%;

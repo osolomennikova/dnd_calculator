@@ -42,10 +42,13 @@
     transform: rotate(360deg);
   }
 }
+
 .container {
   width: 50vw;
   height: 100vh;
-  margin: 110px auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
+
+

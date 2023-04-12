@@ -1,0 +1,73 @@
+$base-font: Inter;
+$base-color: #5D5FEF;
+%btn {
+  height: 100%;
+  border: none;
+  font-family: $base-font;
+  font-size: 14px;
+  color: #4D5562;
+  font-weight: 500;
+  padding-bottom: 5px;
+  position: relative;
+  padding-left: 43px;
+  padding-right: 16px;
+  &:hover {
+    cursor: pointer;
+  }
+  &::before {
+    display: inline;
+    position: absolute;
+    left: 16px;
+    top: 17%;
+  }
+  &:active {
+    background: #FFFFFF;
+    border: 1px solid #E2E3E5;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+}
+
+.navbar_container {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.btn_container {
+  width: 243px;
+  height: 38px;
+  background: #F3F4F6;
+  border-radius: 6px;
+  margin-right: 80px;
+  padding: 1px;
+}
+
+.runtime_btn {
+  width: 44%;
+  @extend %btn;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  &::before {
+    content: url('../../images/eye.svg');
+  }
+  &:active::before {
+    content: url('../../images/active_eye.svg');
+  }
+}
+
+.constructor_btn {
+  width: 56%;
+  @extend %btn;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  &::before {
+    content: url('../../images/selector.svg');
+  }
+  &:active::before {
+    content: url('../../images/active_selector.svg');
+  }
+}

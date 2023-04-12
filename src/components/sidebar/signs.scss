@@ -1,4 +1,5 @@
 $base-font: Inter;
+$base-color: #5D5FEF;
 
 .signs_container {
   width: 240px;
@@ -24,12 +25,12 @@ $base-font: Inter;
   font-weight: 500;
   font-family: $base-font;
   &:hover{
-    border: 2px solid #5D5FEF;
+    border: 2px solid $base-color;
     border-radius: 6px;
     cursor: pointer;
   }
   &:active{
-    background: #5D5FEF;
+    background: $base-color;
     color: white;
   }
 }
