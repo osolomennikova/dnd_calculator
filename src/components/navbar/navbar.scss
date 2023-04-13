@@ -2,7 +2,7 @@ $base-font: Inter;
 $base-color: #5D5FEF;
 %btn {
   height: 100%;
-  border: none;
+  border: 1px #F3F4F6 solid;
   font-family: $base-font;
   font-size: 14px;
   color: #4D5562;
@@ -11,6 +11,8 @@ $base-color: #5D5FEF;
   position: relative;
   padding-left: 43px;
   padding-right: 16px;
+  background: #F3F4F6;
+  margin: 0;
   &:hover {
     cursor: pointer;
   }
