@@ -7,6 +7,9 @@ $base-font: Inter;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   margin-bottom: 12px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .screen_bg {
