@@ -7,17 +7,17 @@ function Buttons() {
 
     const [{ isDragging }, drag] = useDrag(() => ({
         type: ItemTypes.Buttons,
-        end: ( monitor) => {
-            const dropResult = monitor.getDropResult()
-        },
         collect: (monitor) => ({
             isDragging: monitor.isDragging(),
-            handlerId: monitor.getHandlerId(),
         }),
     }))
 
     return (
-        <div ref={drag} data-testid={`buttons`} className="buttons_container">
+        <div
+            ref={drag}
+            className="buttons_container"
+            style={{ opacity: isDragging ? 0.5 : 1 }}
+        >
             <button className="digits">7</button>
             <button className="digits">8</button>
             <button className="digits">9</button>

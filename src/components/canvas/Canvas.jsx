@@ -6,8 +6,11 @@ import {ItemTypes} from './ItemTypes.js'
 
 
 function Canvas() {
+
+    const [board, setBoard] = React.useState([]);
+
     const [{canDrop, isOver}, drop] = useDrop(() => ({
-        accept: ItemTypes.Buttons,
+        accept: [ItemTypes.Buttons, ItemTypes.Signs, ItemTypes.Screen, ItemTypes.Equals],
         drop: () => ({name: 'Canvas'}),
         collect: (monitor) => ({
             isOver: monitor.isOver(),
@@ -19,14 +22,18 @@ function Canvas() {
     if (isActive) {
         backgroundColor = '#F0F9FF'
     } else if (canDrop) {
-        backgroundColor = '#F0F9FF'
+        backgroundColor = '#fff'
     }
 
     return (
         <div ref={drop} style={{...style, backgroundColor}} data-testid="canvas" className="canvas_container">
-            <AddIcon/>
-            <p className="main_text">Перетащите сюда</p>
-            <p className="text">любой элемент <br/>из левой панели</p>
+            {isActive ? null :
+                <>
+                    <AddIcon/>
+                    <p className="main_text">Перетащите сюда</p>
+                    <p className="text">любой элемент <br/>из левой панели</p>
+                </>
+            }
         </div>
     );
 }
